@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if statement</title>
+</head>
+<body>
+    
+    <script>    
+        function compareNumbers(a,b,c) {
+            if(a == b) {
+                if(a == c) {
+                    console.log('a=b=c');
+                } else {
+                    console.log('a=b#c');
+                }
+            } else {
+                if(a == c) {
+                    console.log('a=c#b');
+                } else {
+                    if(b == c) {
+                        console.log('b=c#a');
+                    } else {
+                        console.log('a#b#c');
+                    }
+
+                }
+            }
+        }
+
+        compareNumbers(3,3,3);
+        compareNumbers(3,4,5);
+        compareNumbers(3,3,4);
+        compareNumbers(3,5,3);
+        compareNumbers(3,4,4);
+
+
+    </script>
+</body>
+</html>
